@@ -15,5 +15,10 @@ class Administrateur extends Utilisateur {
     public function afficherRole() {
     echo "Je suis un administrateur<br>";
 }
+public function afficher() {
+    $this->afficherInfos();
+    echo "Login : " . $this->login . "<br>";
+    echo "Rôle : Administrateur<br>";
+}
 }
 ?>

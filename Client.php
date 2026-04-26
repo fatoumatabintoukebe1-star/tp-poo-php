@@ -30,5 +30,10 @@ class Client extends Utilisateur{
 public function afficherRole() {
     echo "Je suis un client<br>";
 }
+public function afficher() {
+    $this->afficherInfos();
+    echo "Login : " . $this->login . "<br>";
+    echo "Type client : " . $this->typeClient . "<br>";
+}
 }
 ?>

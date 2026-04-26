@@ -27,5 +27,10 @@ class Employe extends Utilisateur {
     public function afficherRole() {
     echo "Je suis un employé<br>";
 }
+public function afficher() {
+    $this->afficherInfos();
+    echo "Login : " . $this->login . "<br>";
+    echo "Salaire : " . $this->salaire . "<br>";
+}
 }
 ?>
