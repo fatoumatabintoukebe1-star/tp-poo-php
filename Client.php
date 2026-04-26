@@ -18,6 +18,13 @@ class Client extends Utilisateur{
     }
 
     public function calculerReduction($montant){
+        if ($this->typeClient == "simple") {
+            return $montant * 0.05;
+        } else if ($this->typeClient == "premium") {
+            return $montant * 0.15;
+        }
+
+        return 0;
 
     }
 
