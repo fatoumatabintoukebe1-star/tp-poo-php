@@ -19,8 +19,7 @@ public function getLogin() {
 public function getMotDePasse() {
         return $this->motDePasse;
 }
-
-    
+   
 public function setLogin($login) {
         $this->login = $login;
 }
