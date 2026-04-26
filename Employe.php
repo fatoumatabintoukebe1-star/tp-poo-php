@@ -1,7 +1,7 @@
 <?php 
 require_once "Utilisateur.php";
 
-class Employe extends Utilisateur {
+class Employe extends Utilisateur implements Affichable {
 
     private $salaire;
 
