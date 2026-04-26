@@ -47,7 +47,7 @@ echo "<br>";
 afficherUtilisateur($employe);
 echo "<br>";
 
-afficherUtilisateur($administrateur);
+afficherUtilisateur($admin);
 echo "<br>";
 
 echo "<h3>Nombre d'utilisateurs :</h3>";
