@@ -1,11 +1,13 @@
 <?php 
+require_once "Affichable.php";
+require_once "Authentifiable.php";
 require_once "Personne.php";
 require_once "Utilisateur.php";
 require_once "Client.php";
 require_once "Employe.php";
 require_once "Administrateur.php";
-require_once "Affichable.php";
-require_once "Authentifiable.php";
+
+
 
 $client = new Client(1, "Fatou", "fatou@mail.com", "fatou123", "pass", "premium");
 $employe = new Employe(2, "Ali", "ali@mail.com", "ali123", "pass", 200000);

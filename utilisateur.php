@@ -1,5 +1,6 @@
 <?php 
 require_once"Personne.php";
+require_once"Authentifiable.php";
 abstract class Utilisateur extends Personne implements Authentifiable{
     protected $login;
     protected $motDePasse;
