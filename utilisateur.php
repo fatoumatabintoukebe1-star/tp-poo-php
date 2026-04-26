@@ -1,6 +1,6 @@
 <?php 
 require_once"Personne.php";
-abstract class Utilisateur extends Personne{
+abstract class Utilisateur extends Personne implements Authentifiable{
     private $login;
     private $motDePasse;
 public function __construct($id, $nom, $email, $login, $motDePasse){
