@@ -39,13 +39,13 @@ function afficherUtilisateur(Affichable $u) {
     $u->afficher();
 }
 
-afficherUtilisateur($client);
+afficherUtilisateur($Client);
 echo "<br>";
 
-afficherUtilisateur($employe);
+afficherUtilisateur($Employe);
 echo "<br>";
 
-afficherUtilisateur($admin);
+afficherUtilisateur($Administrateur);
 echo "<br>";
 
 echo "<h3>Nombre d'utilisateurs :</h3>";
