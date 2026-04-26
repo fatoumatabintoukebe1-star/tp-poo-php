@@ -18,7 +18,14 @@ class Client extends Utilisateur{
     }
 
     public function calculerReduction($montant){
-        
+
     }
+
+    public function afficherInfos() {
+
+    parent::afficherInfos(); 
+
+    echo "Type client : " . $this->typeClient . "<br>";
+}
 }
 ?>
