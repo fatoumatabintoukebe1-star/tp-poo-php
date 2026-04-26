@@ -18,4 +18,6 @@ afficherUtilisateur($Employe);
 echo "<br>";
 
 afficherUtilisateur($Administrateur);
+
+Utilisateur::afficherNombre();
 ?>

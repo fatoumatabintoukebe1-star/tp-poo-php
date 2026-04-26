@@ -3,8 +3,10 @@ require_once"Personne.php";
 abstract class Utilisateur extends Personne implements Authentifiable{
     protected $login;
     protected $motDePasse;
+    protected static $nombreUtilisateurs = 0;
 public function __construct($id, $nom, $email, $login, $motDePasse){
     parent::__construct($id, $nom, $email);
+    self::$nombreUtilisateurs++;
 
     $this->login = $login;
     $this->motDePasse = $motDePasse;
@@ -36,7 +38,10 @@ public function afficherUtilisateur() {
 
  abstract public function afficherRole();
  abstract public function afficher();
-    
+
+public static function afficherNombre() {
+    echo "Nombre d'utilisateurs : " . self::$nombreUtilisateurs;
+}
 }
 
 ?>
