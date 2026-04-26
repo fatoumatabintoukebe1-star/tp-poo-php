@@ -1,6 +1,8 @@
 <?php 
 require_once "utilisateur.php";
 class Client extends Utilisateur{
+    const TAUX_SIMPLE = 0.05;
+    const TAUX_PREMIUM = 0.15;
     private $typeClient;
 
     public function __construct($id, $nom, $email, $login, $motDePasse, $typeClient) {
@@ -19,13 +21,12 @@ class Client extends Utilisateur{
 
     public function calculerReduction($montant){
         if ($this->typeClient == "simple") {
-            return $montant * 0.05;
-        } else if ($this->typeClient == "premium") {
-            return $montant * 0.15;
-        }
+        return $montant * self::TAUX_SIMPLE;
+    } else if ($this->typeClient == "premium") {
+        return $montant * self::TAUX_PREMIUM;
+    }
 
-        return 0;
-
+    return 0;
     }
 
     public function afficherInfos() {
