@@ -7,7 +7,7 @@ class Personne{
 public function __construct($id, $nom, $email){
     $this->id = $id;
     $this->nom = $nom;
-    $this->enail = $email;
+    $this->email = $email;
 }
 public function getId(){
     return $this->id;
