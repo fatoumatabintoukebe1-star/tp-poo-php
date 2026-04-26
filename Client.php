@@ -27,5 +27,8 @@ class Client extends Utilisateur{
 
     echo "Type client : " . $this->typeClient . "<br>";
 }
+public function afficherRole() {
+    echo "Je suis un client<br>";
+}
 }
 ?>

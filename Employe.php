@@ -23,5 +23,9 @@ class Employe extends Utilisateur {
     public function calculerSalaireAnnuel() {
         return $this->salaire * 12;
     }
+
+    public function afficherRole() {
+    echo "Je suis un employé<br>";
+}
 }
 ?>

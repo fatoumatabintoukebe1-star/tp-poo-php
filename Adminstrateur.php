@@ -11,5 +11,9 @@ class Administrateur extends Utilisateur {
     public function supprimerUtilisateur($utilisateur) {
         echo "Utilisateur supprimé : " . $utilisateur->getLogin();
     }
+
+    public function afficherRole() {
+    echo "Je suis un administrateur<br>";
+}
 }
 ?>

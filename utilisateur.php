@@ -1,6 +1,6 @@
 <?php 
 require_once"Personne.php";
-class Utilisateur extends Personne{
+abstract class Utilisateur extends Personne{
     private $login;
     private $motDePasse;
 public function __construct($id, $nom, $email, $login, $motDePasse){
@@ -33,6 +33,8 @@ public function afficherUtilisateur() {
 
         echo "Login : " . $this->login . "<br>";
 }
+
+ abstract public function afficherRole();
     
 }
 
