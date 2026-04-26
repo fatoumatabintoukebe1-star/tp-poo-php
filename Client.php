@@ -1,6 +1,6 @@
 <?php 
 require_once "utilisateur.php";
-class Client extends Utilisateur{
+class Client extends Utilisateur implements Affichable {
     const TAUX_SIMPLE = 0.05;
     const TAUX_PREMIUM = 0.15;
     private $typeClient;
@@ -44,4 +44,5 @@ public function afficher() {
     echo "Type client : " . $this->typeClient . "<br>";
 }
 }
+
 ?>

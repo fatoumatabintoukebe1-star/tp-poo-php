@@ -1,7 +1,7 @@
 <?php 
 require_once "Utilisateur.php";
 
-class Administrateur extends Utilisateur {
+class Administrateur extends Utilisateur implements Affichable {
 
     public function __construct($id, $nom, $email, $login, $motDePasse) {
 
